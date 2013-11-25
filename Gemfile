@@ -14,5 +14,6 @@ group :development do
   gem "jeweler", "~> 1.8.7"
 	gem "simplecov"
   gem 'pry'
+  gem 'rspec'
 
 end
