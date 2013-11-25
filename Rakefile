@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "girl_world"
   gem.homepage = "http://github.com/AmalHussein/girl_world"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A Ruby Wrapper for the World Bank API which queries the Gender Statistics database for health, wealth, and economic indicators of women, and girls around the world. }
+  gem.description = %Q{A Ruby Wrapper for the World Bank API which queries the Gender Statistics database for health, wealth, and economic indicators of women, and girls around the world. }
   gem.email = "amalhussein08@gmail.com"
   gem.authors = ["Amal Hussein"]
   # dependencies defined in Gemfile
@@ -30,14 +30,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test

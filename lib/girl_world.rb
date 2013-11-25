@@ -39,9 +39,7 @@ module GirlWorld
 		HTTParty.get("http://api.worldbank.org/countries/#{country}/indicators/SE.ENR.PRSC.FM.ZS?date=#{start_year}:#{end_year}&format=json")																																													
 	end 
 
-
 	def poplution(country)
-
 	end 
 
 end 
